@@ -1,13 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Atelier Artesangel</title>
 </head>
 <body>
-    <h1>Pagina Muito Bacana</h1>
-    <p> So it's in to the void now me girls and me boys</p>
+
+    <header>
+        <div class="header-content">
+            <h1>Atelier Artesangel</h1>
+            <div class="redes-sociais">
+                <a href="https://www.instagram.com/atelierartesangel_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <img src="img/Insta.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/5517997480750g" target="_blank">
+                    <img src="img/Whats.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </header>
+    
+        <div class="secoes-flex">
+            <main class="container-principal">
+                <section class="banner">
+                    <div class="carrossel-box">
+                        <div class="carrossel">
+                            <div class="carrossel-itens">
+                                <div class="carrossel-item ativo">
+                                    <img src="img/Imagem1.jpeg" alt="Imagem 1 do Atelier Artesangel">
+                                </div>
+                                <div class="carrossel-item">
+                                    <img src="img/Imagem2.jpeg" alt="Imagem 2 do Atelier Artesangel">
+                                </div>
+                                <div class="carrossel-item">
+                                    <img src="img/Imagem3.jpeg" alt="Imagem 3 do Atelier Artesangel">
+                                </div>
+                                <div class="carrossel-item">
+                                    <img src="img/Imagem4.jpeg" alt="Imagem 4 do Atelier Artesangel">
+                                </div>
+                                <div class="carrossel-item">
+                                    <img src="img/Imagem5.jpeg" alt="Imagem 5 do Atelier Artesangel">
+                                </div>
+                            </div>
+                            <button class="carrossel-btn anterior" onclick="mudarItem(-1)">&#10094;</button>
+                            <button class="carrossel-btn proximo" onclick="mudarItem(1)">&#10095;</button>
+                        </div>
+                    </div>
+                </section>
+            <section id="servicos">
+                <h2>Nossos Serviços</h2>
+                <ul>
+                    <li>Arte Personalizada</li>
+                    <li>Decoração para Eventos</li>
+                    <li>Workshops de Artesanato</li>
+                </ul>
+            </section>
+    
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco para encomendas ou dúvidas:</p>
+                <p>Email: contato@artesangel.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Atelier Artesangel. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

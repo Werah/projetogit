@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('img/floral1.jpg');
+    background-repeat: repeat;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+}
+
+header {
+    background-color: #f5d3f5;
+    padding: 28px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #6a1b9a;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: auto;
+}
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6a1b9a;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ab47bc;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrossel-box {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    height: 355px;
+    overflow: hidden;
+    border: 2px solid #f5d3f5; 
+}
+
+.carrossel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carrossel-itens {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-item {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.carrossel-item.ativo {
+    display: block;
+}
+
+.carrossel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #f0f0f0;
+}
+
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
+}
+
+.carrossel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.anterior {
+    left: 10px;
+}
+
+.proximo {
+    right: 10px;
+}
+
+#servicos ul {
+    list-style: none;
+    padding: 0;
+}
+
+#servicos ul li {
+    background-color: #f5d3f5;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#contato p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.secoes-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#servicos, #contato {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    border: 2px solid #f5d3f5;
+    
+}
+
+@media (max-width: 768px) {
+    .secoes-flex {
+        flex-direction: column;
+    }
+
+    #servicos, #contato {
+        max-width: 100%;
+    }
+}
