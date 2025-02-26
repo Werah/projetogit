@@ -46,6 +46,7 @@ header h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .redes-sociais {
